@@ -1,3 +1,3 @@
-# starwars-names
+# wuteva-names
 
-For all your random Star Wars character needs
+For all your random Wuteva character needs
