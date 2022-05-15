@@ -4,6 +4,7 @@
   "description": "Get random Wuteva names",
   "main": "dist/index.js",
   "scripts": {
+    "commit": "git-cz",
     "prebuild": "rimraf dist",
     "build": "npm-run-all --parallel build:*",
     "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
@@ -94,8 +95,12 @@
     }
   },
   "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    },
     "ghooks": {
-      "pre-commit": "npm run validate"
+      "pre-commit": "npm run validate",
+      "commit-msg": "validate-commit-msg"
     }
   }
 }
